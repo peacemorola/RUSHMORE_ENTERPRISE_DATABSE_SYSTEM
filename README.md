@@ -1,0 +1,1 @@
+RushMore Pizzeria has expanded beyond a single location, making its JSON-based order system slow, error-prone, and single-user only. This project replaces it with a robust, scalable RDBMS that centralizes stores, customers, menu items, ingredients, and orders as a single source of truth.
