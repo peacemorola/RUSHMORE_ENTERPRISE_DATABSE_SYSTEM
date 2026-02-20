@@ -19,18 +19,20 @@ The final system serves as a **single source of truth** for stores, customers, m
 ---
 
 # 🏗 System Architecture
+<p align="center">
 
+```text
 Local Machine
-   │
-   │ (Python + psycopg2 + Faker)
-   ▼
-Azure PostgreSQL Flexible Server
-   │
-   ▼
-pgAdmin (Database Management & Querying)
+     │
+     ▼
+Azure PostgreSQL
+     │
+     ▼
+pgAdmin
+```
 
+</p>
 
----
 
 ## 🧩 Components
 
