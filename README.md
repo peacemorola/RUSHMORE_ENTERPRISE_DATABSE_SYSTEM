@@ -56,7 +56,7 @@ pgAdmin (Database Management & Querying)
 ## Entity Relationship Diagram (ERD)
 
 <p align="center">
-  <img src="red.png" width="700">
+  <img src="ERD.png" width="700">
 </p>
 
 The database schema was designed following **Third Normal Form (3NF)** principles to:
