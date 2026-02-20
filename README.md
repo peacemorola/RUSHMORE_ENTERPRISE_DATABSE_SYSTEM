@@ -189,9 +189,10 @@ Through this project, I gained practical experience in:
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
-CAPSTONE/
+```bash
+RUSHMORE_ENTERPRISE_DATABASE_SYSTEM/
 │
 ├── create_statements.sql
 ├── Analysis_queries.sql
@@ -200,11 +201,10 @@ CAPSTONE/
 ├── README.md
 │
 └── Python_population/
-├── data_generator.py
-├── connect.py
-└── .env (ignored)
-
----
+    ├── data_generator.py
+    ├── connect.py
+    └── .env  (ignored)
+```
 
 # ✅ Conclusion
 
