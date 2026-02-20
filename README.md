@@ -49,6 +49,112 @@ pgAdmin (Database Management & Querying)
 
 ---
 
+---
+
+# 🧠 Part 1 – Database Design
+
+## Entity Relationship Diagram (ERD)
+
+<p align="center">
+  <img src="ERD.png" width="700">
+</p>
+
+The database schema was designed following **Third Normal Form (3NF)** principles to:
+
+- Eliminate redundancy  
+- Maintain referential integrity  
+- Support scalable analytics  
+
+---
+
+## Tables Implemented
+
+- **Stores**
+- **Customers**
+- **Ingredients**
+- **Categories**
+- **Menu_Items**
+- **Orders**
+- **Order_Items**
+
+---
+
+# ☁ Part 2 – Cloud Deployment (Azure)
+
+### Step 1 – Provision PostgreSQL
+- Created **Azure Database for PostgreSQL – Flexible Server**
+- Selected **Burstable B1ms**
+- Configured firewall rules
+- Enabled public access
+
+*(Insert Azure Deployment Screenshot Here)*
+
+### Step 2 – Create Database
+Created the **Rushmore Pizzaria** database in Azure.
+
+### Step 3 – Run Schema Script
+Executed `create_statements.sql` via pgAdmin to create all tables in the cloud.
+
+---
+
+# 🐍 Part 3 – Data Population with Faker
+
+A Python script (`data_generator.py`) was developed to generate realistic masked data.
+
+### Key Features
+- Uses **Faker** for synthetic PII  
+- Reads credentials securely from `.env`  
+- Respects foreign key constraints  
+- Generates **10,000+ records**
+
+---
+
+## Target Data Volume
+
+| Table | Records Generated |
+|--------|------------------|
+| Stores | 4 |
+| Menu_Items | 25 |
+| Ingredients | 45 |
+| Customers | 1,000+ |
+| Orders | 5,000+ |
+| Order_Items | 15,000+ |
+
+---
+
+# 📊 Part 4 – Analytics (Proving It Works)
+
+The database supports business insights such as:
+
+- Total revenue per store  
+- Top 10 customers by spending  
+- Most popular menu item  
+- Average order value  
+- Busiest hour of the day  
+
+All queries are included in `Analysis_queries.sql`.
+
+---
+
+# 📸 Required Screenshots
+
+### Azure PostgreSQL Instance  
+<p align="center">
+  <img src="Azure_deployment.png" width="800">
+</p> 
+
+### Table Row Counts  
+<p align="center">
+  <img src="pgadmin_table_row_count.png" width="800">
+</p>
+
+### pgAdmin Connected to Cloud  
+<p align="center">
+  <img src="pg_admin_to_cloud.png" width="800"> 
+</p>
+
+---
+
 # 🔐 Security Considerations
 
 - Credentials stored in **`.env`**
