@@ -4,11 +4,11 @@ import os
 from pathlib import Path
 
 env_path = Path(__file__).parent / ".env"
-print("ENV FILE EXISTS:", env_path.exists())  # <--- add this line
+print("ENV FILE EXISTS:", env_path.exists()) 
 
 load_dotenv(dotenv_path=env_path)
 
-print("Loaded password:", os.getenv("DB_PASSWORD"))  # Debug line
+print("Loaded password:", os.getenv("DB_PASSWORD"))  
 print("DB_HOST:", os.getenv("DB_HOST"))
 print("DB_USER:", os.getenv("DB_USER"))
 
